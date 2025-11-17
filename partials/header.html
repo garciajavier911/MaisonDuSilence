@@ -1,0 +1,68 @@
+<header class="container-fluid">
+  <!-- Primera fila: Logo centrado -->
+  <div class="row py-2">
+    <div class="col text-center">
+      <a class="navbar-brand fw-bold text-uppercase fs-4" href="../index.html">Maison du Silence</a>
+    </div>
+  </div>
+
+  <hr class="my-3"
+
+  <!-- Segunda fila: Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-lg justify-content-center">
+
+      <!-- Botón hamburguesa con favicon -->
+      <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation"
+      >
+        <img src="../favicon.png" alt="Menú" style="width: 30px; height: 30px;">
+      </button>
+
+      <!-- Menú colapsable -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
+
+          <!-- Dropdown Tratamientos -->
+          <li class="nav-item dropdown position-relative"> <a class="nav-link dropdown-toggle"
+            href="../views/tratamientos.html" role="button">Tratamientos</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../views/tratamientos_tradicion.html">Tradición</a></li>
+            <li><a class="dropdown-item" href="../views/tratamientos_esenciales.html">Esenciales</a></li>
+            <li><a class="dropdown-item" href="../views/tratamientos_pareja.html">En Pareja</a></li>
+          </ul>
+        </li>
+
+          <!-- Dropdown Experiencias -->
+          <li class="nav-item dropdown position-relative"> <a class="nav-link dropdown-toggle"
+            href="../views/experiencias.html" role="button">Experiencias</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../views/experiencias_manantiales.html">Manantiales</a></li>
+            <li><a class="dropdown-item" href="../views/experiencias_termal.html">Circuito Termal</a></li>
+            <li><a class="dropdown-item" href="../views/experiencias_pareja.html">En Pareja</a></li>
+          </ul>
+        </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../views/destinos.html">Destinos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../views/contacto.html">Contacto</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

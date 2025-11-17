@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+
+  <!-- Bootstrap, Fonts, CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" href="../favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main class="container-lg">
+
+    <!-- PRESENTACIÓN -->
+    <section class="text-center my-5">
+      <h6>CONTACTO</h6>
+      <h3>TU MOMENTO COMIENZA AQUÍ</h3>
+      <p class="mx-auto" style="max-width: 700px;">
+        En Maison du Silence creemos que el bienestar empieza con un gesto sencillo: reservar un instante para ti.
+        Permítenos acompañarte en esa pausa consciente, donde el cuerpo se relaja, la mente se aquieta y el tiempo
+        se detiene.
+      </p>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+
+          <!-- Mensaje de éxito oculto -->
+          <form method="post" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre"
+              pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{3,40}$" required>
+            <div class="invalid-feedback">Introduce un nombre válido (solo letras, entre 3 y 40 caracteres).</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" id="apellidos" name="apellidos" 
+              pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{4,60}$" required>
+            <div class="invalid-feedback">Introduce apellidos válidos (solo letras, entre 4 y 60 caracteres).</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" name="email" 
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+            <div class="invalid-feedback">Introduce un correo electrónico válido.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input type="tel" class="form-control" id="telefono" name="telefono"
+              pattern="^[0-9]{9}$" required>
+            <div class="invalid-feedback">El teléfono debe tener 9 dígitos numéricos.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="comentarios" class="form-label">Comentarios</label>
+            <textarea class="form-control" id="comentarios" name="comentarios" rows="5"
+              placeholder="Opcional"></textarea>
+          </div>
+
+          <div>
+          <button class="btn btn-outline-secondary" type="button">Enviar</button>
+          <button class="btn btn-outline-secondary" type="reset">Borrar</button>
+        </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATOS DE CONTACTO -->
+    <section class="text-center my-5">
+      <h6>INFORMACIÓN DE CONTACTO</h6>
+
+      <p class="mt-3">
+        <i class="bi bi-telephone"></i> &nbsp; 96 543 00 58 <br>
+        <i class="bi bi-envelope"></i> &nbsp; info@maisondusilence.com<br>
+      </p>
+
+      <p>
+        <i class="bi bi-geo-alt"></i> &nbsp; Crtra. Guadalest-Alcoy, nº10 · 03516 Benimantell
+      </p>
+
+      <p class="mt-3" style="max-width: 600px; margin: 0 auto;">
+        Si deseas visitarnos, te recomendamos reservar con antelación para ofrecerte una experiencia tranquila y sin
+        esperas.
+      </p>
+    </section>
+
+    <!-- MAPA -->
+    <section class="my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="ratio ratio-16x9 rounded overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3115.169476466099!2d-0.213147!3d38.6760056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd620ebf6f2b5df7%3A0x62cb680c4f384500!2sCrtra.%20Guadalest-Alcoy%2C%2010%2C%2003516%20Benimantell%2C%20Alicante!5e0!3m2!1ses!2ses!4v1731623456789"
+              allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="text-center my-5">
+      <h6>¿Listo para reservar?</h6>
+      <p>Estaremos encantados de acompañarte en tu camino hacia la calma y el bienestar.</p>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../javascript/includes.js"></script>
+</body>
+
+</html>

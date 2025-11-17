@@ -1,0 +1,275 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #e8e6df !important;
+  font-family: caudex;
+  color:#555555;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: cinzel !important;
+  font-style: normal;
+  color: black;
+}
+h3{
+  margin-bottom: 1rem;
+}
+
+header {
+  margin-top: 1rem;
+  background-color: #e8e6df !important;
+  font-family: cinzel;
+  text-transform: uppercase;
+  font-size: small;
+  margin-bottom: 45px;
+}
+header .nav-link {
+  color: #2e2f2f !important;
+}
+
+header .nav-link.active{
+  color: dimgray !important;
+}
+header .nav-link:hover {
+  color: dimgray !important;
+}
+
+
+
+.navbar .dropdown-menu {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0;
+   background-color: #e8e6df !important;
+   font-size: small;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  z-index: 1000;
+
+}
+
+.navbar .dropdown-item.active {
+  color: dimgray !important;
+  background-color: #e8e6df !important;
+}
+
+
+.nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+.nav-item.dropdown.show > .dropdown-menu {
+  display: none !important;
+}
+.dropdown-menu .dropdown-item:focus,
+.dropdown-menu .dropdown-item:active {
+  background-color: transparent;
+  color: inherit;
+  box-shadow: none;}
+  
+  .dropdown-menu .dropdown-item:hover {
+  background-color: #e8e6df !important;
+  color:dimgray;
+}
+
+#footer{
+  background-color: #2e2f2f;
+  margin-top: 2rem;
+}
+
+#footer h1{
+  color: #f7f6f1;
+   font-family: cinzel;
+  text-transform: uppercase;
+  font-size: large;
+}
+#footer ul li{
+  color: #999999;
+  font-size: x-small;
+  text-align: left;
+}
+
+.video {
+  max-width: 75rem;
+  max-height: 40rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.video-inicio video {
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+#sobre-nosotros p,
+#tratamientos p {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-size: small;
+}
+
+.card {
+  background-color: #e8e6df !important;
+  border: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transform: scale(0.8);
+  transform-origin: center center;
+}
+
+.card img {
+  height: 450px;
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+#card_texto img{
+  height: 450px;
+  object-fit: contain;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: solid 1px #2e2f2f;
+}
+
+.card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+
+.card-title {
+  font-size: small;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #555555;
+}
+
+.card a {
+  align-self: flex-start;
+  color: #555;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card a:hover i {
+  transform: translateX(5px);
+}
+
+
+
+.titulos{
+  color: #e8e6df;
+  font-family: cinzel;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: medium;
+
+}
+
+#masajes{
+  margin: 0 auto;
+  font-size: small;
+  margin-bottom: 20px;
+}
+
+#masajes h3{
+  margin-bottom: 30px;
+}
+
+
+#masajes p, li{
+  text-align: left;
+  max-width: 85%;
+  
+}
+#masajes li::marker {
+  color: dimgray;
+}
+#masajes li{
+  margin-left: -15px;
+}
+.btn-outline-secondary{
+  margin-top: 3%;
+}
+.btn-outline-secondary:hover {
+  background-color: #2e2f2f;
+}
+
+#imagen_relajante{
+  max-height: 70%;
+  margin-right: 5%;
+  margin-left: auto;
+  display: block;
+  
+}
+
+.termal {
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: small;
+}
+
+
+
+#experiencias-termal {
+  display: flex;
+  flex-direction: column;
+}
+
+#experiencias-termal .col-lg-4:first-child img {
+  max-height: 15rem;
+  object-fit: cover;
+  width: 100%;
+  
+}
+
+
+#experiencias-termal .col-lg-8:last-child img {
+  max-height: 30.5rem;
+  object-fit: cover;
+  width: 100%;
+}
+#imagen-texto{
+margin-bottom: 1rem;
+  border: solid 1px #2e2f2f;
+}
+
+
+#experiencias-termal {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  #experiencias-termal .col-lg-4:first-child img {
+    height: 10rem; /* antes 12.5rem */
+  }
+
+  #experiencias-termal .col-lg-8:last-child img {
+    height: 15rem; /* antes 18.75rem */
+  }
+}
