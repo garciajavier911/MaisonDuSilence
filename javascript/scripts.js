@@ -22,6 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Ocultar mensaje tras 4s
     setTimeout(() => {
       successMessage.classList.add("d-none");
-    }, 4000);
+    }, 8000);
   });
 });
