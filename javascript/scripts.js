@@ -1,17 +1,27 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('formContacto');
-  const exito = document.getElementById('exito');
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector("form");
+  const successMessage = document.getElementById("successMessage");
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    event.stopPropagation();
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Evita envío real del formulario
 
-    if (form.checkValidity()) {
-      exito.classList.remove('d-none'); // mostrar mensaje de éxito
-      form.reset(); // limpiar formulario
-      form.classList.remove('was-validated'); // quitar estilos de validación
-    } else {
-      form.classList.add('was-validated'); // mostrar errores
+    // Validación nativa de Bootstrap
+    if (!form.checkValidity()) {
+      event.stopPropagation();
+      form.classList.add("was-validated");
+      return;
     }
+
+    // Si está todo correcto
+    successMessage.classList.remove("d-none");
+
+    // Reiniciar formulario
+    form.reset();
+    form.classList.remove("was-validated");
+
+    // Ocultar mensaje tras 4s
+    setTimeout(() => {
+      successMessage.classList.add("d-none");
+    }, 4000);
   });
 });
